@@ -1,0 +1,6 @@
+server:
+  port: 7100
+security:
+  oauth2:
+    resource:
+      userInfoUri: http://localhost:7000/oauth/token
