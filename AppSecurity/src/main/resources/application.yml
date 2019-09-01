@@ -13,6 +13,18 @@ spring:
     
     
 # Security Constraints
+security:
+  oauth2:
+    client:
+      id: hackpro_clients
+      client-secret: $2a$04$ciQ1GCFda8hdctnN/R.pCuIbK6N6CfOCb6/kXYnSZMTlNv3WZcsJ2
+      authorized-grant-types: client_credentials,password,refresh_token,implicit
+      authorities: ROLE_CLIENT,ROLE_TRUSTED_CLIENT
+      scope: read,write,trust
+      resource-ids: oauth2-resource
+      access-token-validity-seconds: 300
+      refresh-token-validity-seconds: 600
+       
 
     
     
